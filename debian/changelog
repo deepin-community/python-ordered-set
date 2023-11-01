@@ -1,5 +1,32 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-ordered-set (4.1.0-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release.
+  * d/copyright: update.
+  * d/rules: migrate to flit + pybuild-plugin-pyproject.
+  * refactor tests, as upstream changed things.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Louis-Philippe Véronneau <pollo@debian.org>  Fri, 28 Jan 2022 21:46:05 -0500
+
+python-ordered-set (4.0.2-1) unstable; urgency=medium
+
+  [ Louis-Philippe Véronneau ]
+  * Initial release. (Closes: #1002701)
+  * d/control: pollo is taking over this package :).
+  * d/watch: use the github tarball.
+  * d/patches: drop Use-pytest.patch, as it's not needed anymore.
+  * d/rules: simplify.
+  * d/copyright: overhaul.
+  * d/tests: overhaul.
+  * d/control: update to latest tooling, drop pypy package.
+  * d/pybuild.testfiles: add non-standard files.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Remove ancient X-Python3-Version field
+  * Use debhelper-compat instead of debian/compat.
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+ -- Louis-Philippe Véronneau <pollo@debian.org>  Mon, 27 Dec 2021 15:59:25 -0500
